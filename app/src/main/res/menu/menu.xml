@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/rtd"
+    android:title="Rupees To Doller"
+    ></item>
+    <item
+        android:id="@+id/dtr"
+        android:title="Doller To Rupees"
+        ></item>
+    <item
+        android:id="@+id/rtp"
+        android:title="Rupees To Pound"
+        ></item>
+    <item
+        android:id="@+id/ptr"
+        android:title="Pound To Rupees"
+        ></item>
+</menu>
