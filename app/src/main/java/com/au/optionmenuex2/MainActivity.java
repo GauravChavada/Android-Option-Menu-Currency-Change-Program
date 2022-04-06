@@ -10,11 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity 
+{
     EditText value;
     TextView tv;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         value=findViewById(R.id.ed1);
@@ -22,20 +24,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu m) {
+    public boolean onCreateOptionsMenu(Menu m) 
+    {
         getMenuInflater().inflate(R.menu.menu,m);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) 
+    {
       try {
           Double res=Double.parseDouble(value.getText().toString());
           switch (item.getItemId())
           {
-
               case R.id.rtd:
                   tv.setText("Ruppes To Dollar"+res/74.66);
                   break;
